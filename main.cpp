@@ -33,7 +33,7 @@ void guessingGame()
 
 	while (remaining > 0)
 	{
-		cout << "\033[2J\033[1;1H";
+		// cout << "\033[2J\033[1;1H";
 		int guess;
 		cout << "Tried " << tries - remaining << " times!" << endl;
 		cout << "Input: ";
