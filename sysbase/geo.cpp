@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <corecrt_math_defines.h>
 
 class Geo
 {
