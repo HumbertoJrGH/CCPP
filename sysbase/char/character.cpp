@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -10,12 +11,12 @@ public:
 		cout << "created a new character" << endl;
 	}
 
-	Character(string name, string gender, int age, float height, string race, string job)
+	Character(string name, string surname, string gender, int age, float height, string race, string job)
 	{
-		cout << name << endl
+		cout << name << " " << surname << endl
 			  << gender << " " << race << " " << job << endl
 			  << age << endl
-			  << height << "cm" << endl
+			  << fixed << std::setprecision(2) << height << "cm" << endl
 			  << endl;
 		this->name = name;
 		this->gender = gender;
