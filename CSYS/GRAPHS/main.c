@@ -12,27 +12,65 @@ void writeMatrixToFile(int **matrix, int size, const char *filename, char key);
 void readMatrixFromFile(int ***matrix, int *size, const char *filename, char key);
 void encryptDecrypt(char *data, size_t dataSize, char key);
 
+void clrbfr()
+{
+	while ((getchar()) != '\n' && getchar() != EOF)
+		;
+}
+
 int main()
 {
 	int size;
-
-	readMatrixSize(&size);
-
+	int choice;
 	int **matrix = NULL;
 	char key = 'K';
 
-	createMatrix(&matrix, size);
-	fillMatrix(matrix, size);
-	calculateMatrixSize(matrix, size, size);
+	while (1)
+	{
+		system("clear");
+		printf("MATRIX OPERATIONS\n");
+		printf("1. Create Matrix\n");
+		printf("2. Fill Matrix\n");
+		printf("3. Print Matrix\n");
+		printf("4. Save Matrix Encrypted\n");
+		printf("5. Load Matrix Encrypted\n");
+		printf("6. Clear Matrix\n");
+		printf("7. Exit\n\n");
 
-	writeMatrixToFile(matrix, size, "encrypted", key);
+		// clrbfr();
+		printf("Enter your option: ");
 
-	printMatrix(matrix, size);
-	clearMatrix(&matrix, size);
-	createMatrix(&matrix, size);
+		scanf("%d", &choice);
 
-	readMatrixFromFile(&matrix, &size, "encrypted", key);
-	printMatrix(matrix, size);
+		switch (choice)
+		{
+		case 1:
+			printf("What is the size of the matrix? ");
+			scanf("%d", &size);
+			createMatrix(&matrix, size);
+			break;
+		case 2:
+			fillMatrix(matrix, size);
+			break;
+		default:
+			system("clear");
+			char c;
+			printf("\nSorry, this option isn't available!");
+			clrbfr();
+			getchar();
+			system("clear");
+			break;
+		}
+	}
+
+	// writeMatrixToFile(matrix, size, "encrypted", key);
+
+	// printMatrix(matrix, size);
+	// clearMatrix(&matrix, size);
+	// createMatrix(&matrix, size);
+
+	// readMatrixFromFile(&matrix, &size, "encrypted", key);
+	// printMatrix(matrix, size);
 
 	return 0;
 }
