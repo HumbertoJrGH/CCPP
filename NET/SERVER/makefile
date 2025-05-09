@@ -1,18 +1,32 @@
 CC = gcc
+CFLAGS = -Wall -Wextra -I./json -I./server -I./router -I./controllers
 
-CFLAGS = -Wall -Wextra -I./json
+# ARQUIVOS-FONTE
+SRCS = \
+    main.c \
+    json/json_builder.c \
+    server/server.c \
+    router/router.c \
+    controllers/status_controller.c \
+    controllers/shutdown_controller.c
 
-SRCS = main.c json/json_builder.c
+# OBJETOS COMPILADOS
+OBJS = $(SRCS:.c=.o)
 
-OBJS = $(SRCS)
+# NOME DO EXECUTÁVEL FINAL
+TARGET = ccppserver
 
-TARGET = server
-
+# REGRA PADRÃO
 all: $(TARGET)
 
-$(TARGET): $(SRCS)
+# LINK FINAL
+$(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
+# COMPILAÇÃO INDIVIDUAL
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
+# LIMPAR BINÁRIOS E OBJETOS
 clean:
 	rm -f $(TARGET) $(OBJS)
