@@ -3,4 +3,6 @@
 
 void handle_status(int client_socket, const char *request);
 
+void handle_test(int client_socket, const char *request);
+
 #endif

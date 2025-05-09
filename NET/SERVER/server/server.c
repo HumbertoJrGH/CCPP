@@ -73,6 +73,7 @@ void server_start(int port)
 
 	// REGISTRA ROTAS
 	router_add("GET", "/status", handle_status);
+	router_add("GET", "/test", handle_test);
 	router_add("POST", "/shutdown", handle_shutdown);
 
 	// LOOP PRINCIPAL

@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"*.php": "php",
+		"*.py": "python",
+		"*.cs": "csharp",
+		"status_controller.h": "c",
+		"router.h": "c"
+	}
+}

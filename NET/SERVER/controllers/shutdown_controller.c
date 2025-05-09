@@ -2,10 +2,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/socket.h>
 #include "../json/json_builder.h"
 
 void handle_shutdown(int client_socket, const char *request)
 {
+	(void)request;
 	char *json = json_create();
 	json_add_string(&json, "status", "shutting_down");
 	json_add_string(&json, "message", "Server will shut down");
