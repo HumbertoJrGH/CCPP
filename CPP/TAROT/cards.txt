@@ -1,0 +1,13 @@
+COURT
+
+Man (Mars)
+Woman (Venus)
+Hero/Heroine (Sun)
+Priest/Priestess (Moon)
+Merchant (Mercury)
+Crippled (Chiron)
+Traveler (Jupiter)
+Sage (Saturn)
+Outcast (Uranus)
+Artist (Neptune)
+Witch (Pluto)

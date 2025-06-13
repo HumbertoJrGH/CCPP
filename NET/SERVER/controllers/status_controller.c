@@ -6,7 +6,7 @@
 #include <sys/socket.h>
 #include "../json/json_builder.h"
 
-#define COMPLEXITY 100000
+#define COMPLEXITY 1000000000
 
 void handle_status(int client_socket, const char *request)
 {
