@@ -14,6 +14,9 @@
 
 #define BUFFER_SIZE 1024
 
+#define AUTH_TOKEN "token-secreto"
+#define AUTH_HEADER "X-TOKEN-UV"
+
 int server_fd;
 
 // HANDLER PARA CTRL+C
@@ -24,6 +27,43 @@ void handle_sigint(int sig)
 	if (server_fd >= 0)
 		close(server_fd);
 	exit(0);
+}
+
+void send_invalid_token_response(int socket)
+{
+	const char *response =
+		 "HTTP/1.1 401 Unauthorized\r\n"
+		 "Content-Type: application/json\r\n"
+		 "Connection: close\r\n"
+		 "\r\n"
+		 "{\"error\": \"Token inválido\"}\n";
+	write(socket, response, strlen(response));
+}
+
+char *get_header_value(const char *request, const char *header_name)
+{
+	const char *header_start = strstr(request, header_name);
+	if (!header_start)
+		return NULL;
+
+	header_start += strlen(header_name);
+	if (*header_start == ':')
+		header_start++;
+	while (*header_start == ' ')
+		header_start++;
+
+	const char *header_end = strchr(header_start, '\r');
+	if (!header_end)
+		return NULL;
+
+	size_t length = header_end - header_start;
+	char *value = malloc(length + 1);
+	if (!value)
+		return NULL;
+
+	strncpy(value, header_start, length);
+	value[length] = '\0';
+	return value;
 }
 
 void server_start(int port)
@@ -92,7 +132,14 @@ void server_start(int port)
 		printf("Received:\n%s\n", buffer);
 
 		// DESPACHA A ROTA
-		route_dispatch(new_socket, buffer);
+		char *token = get_header_value(buffer, AUTH_HEADER);
+		if (!token || strcmp(token, AUTH_TOKEN) != 0)
+			send_invalid_token_response(new_socket);
+		else
+			route_dispatch(new_socket, buffer);
+
+		if (token)
+			free(token);
 
 		close(new_socket);
 	}

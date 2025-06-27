@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -I./json -I./server -I./router -I./controllers
+CFLAGS = -Wall -Wextra -I./json -I./server -I./router -I./controllers -I./sqlite
 
 # ARQUIVOS-FONTE
 SRCS = \
@@ -8,7 +8,8 @@ SRCS = \
     server/server.c \
     router/router.c \
     controllers/status_controller.c \
-    controllers/shutdown_controller.c
+    controllers/shutdown_controller.c \
+    sqlite/sqlite3.c
 
 # OBJETOS COMPILADOS
 OBJS = $(SRCS:.c=.o)
@@ -21,7 +22,7 @@ all: $(TARGET)
 
 # LINK FINAL
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
+	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET) -ldl -lpthread
 
 # COMPILAÇÃO INDIVIDUAL
 %.o: %.c

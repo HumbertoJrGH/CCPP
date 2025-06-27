@@ -1,5 +1,4 @@
 COURT
-
 Man (Mars)
 Woman (Venus)
 Hero/Heroine (Sun)
@@ -11,3 +10,17 @@ Sage (Saturn)
 Outcast (Uranus)
 Artist (Neptune)
 Witch (Pluto)
+
+HOURS
+I
+II
+III
+IV
+V
+VI
+VII
+VIII
+IX
+X
+XI
+XII
