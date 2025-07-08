@@ -1,26 +1,107 @@
-COURT
-Man (Mars)
-Woman (Venus)
-Hero/Heroine (Sun)
-Priest/Priestess (Moon)
-Merchant (Mercury)
-Crippled (Chiron)
-Traveler (Jupiter)
-Sage (Saturn)
-Outcast (Uranus)
-Artist (Neptune)
-Witch (Pluto)
+O HERÓI DE PUNHAIS
+Meaning: Personalidade conquistadora.
+Archetype: ...
+Element: Fogo
+Planet: Sol
 
-HOURS
-I
-II
-III
-IV
-V
-VI
-VII
-VIII
-IX
-X
-XI
-XII
+O SACERDOTE DE PUNHAIS
+Meaning: Intuição audaz, personalidade explosiva, descontrole emocional.
+Archetype: ...
+Element: Fogo
+Planet: Lua
+
+O ANDARILHO DE PUNHAIS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Mercúrio
+
+O ARTESÃO DE PUNHAIS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Vênus
+
+O GUERREIRO DE PUNHAIS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Marte
+
+O CURANDEIRO DE PUNHAIS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Quironte
+
+O CURANDEIRO DE FLORES
+Meaning: ...
+Archetype: ...
+Element: Terra
+Planet: Quironte
+
+O CURANDEIRO DE BORBOLETAS
+Meaning: ...
+Archetype: ...
+Element: Ar
+Planet: Quironte
+
+O CURANDEIRO DE CONCHAS
+Meaning: ...
+Archetype: ...
+Element: Água
+Planet: Quironte
+
+O CURANDEIRO DE PIRAS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Quironte
+
+O CURANDEIRO DE FRUTOS
+Meaning: ...
+Archetype: ...
+Element: Terra
+Planet: Quironte
+
+O CURANDEIRO DE PLUMAS
+Meaning: ...
+Archetype: ...
+Element: Ar
+Planet: Quironte
+
+O HERÓI DE CÁLICES
+Meaning: Personalidade magnética, porém mórbida.
+Archetype: Misterioso
+Element: Água
+Planet: Sun
+
+O CURANDEIRO DE CÁLICES
+Meaning: ...
+Archetype: ...
+Element: Água
+Planet: Quironte
+
+O CURANDEIRO DE VELAS
+Meaning: ...
+Archetype: ...
+Element: Fogo
+Planet: Quironte
+
+O CURANDEIRO DE JÓIAS
+Meaning: ...
+Archetype: ...
+Element: Terra
+Planet: Quironte
+
+O CURANDEIRO DE SINOS
+Meaning: ...
+Archetype: ...
+Element: Ar
+Planet: Quironte
+
+O CURANDEIRO DE CRISTAIS
+Meaning: ...
+Archetype: ...
+Element: Água
+Planet: Quironte

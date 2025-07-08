@@ -7574,7 +7574,11 @@ struct sqlite3_module {
 **
 ** <blockquote>column OP expr</blockquote>
 **
-** where OP is =, &lt;, &lt;=, &gt;, or &gt;=.)^  ^(The particular operator is
+** where OP is =, &lt
+Meaning: , &lt
+Archetype: =, &gt
+Element: , or &gt
+Planet: =.)^  ^(The particular operator is
 ** stored in aConstraint[].op using one of the
 ** [SQLITE_INDEX_CONSTRAINT_EQ | SQLITE_INDEX_CONSTRAINT_ values].)^
 ** ^(The index of the column is stored in
