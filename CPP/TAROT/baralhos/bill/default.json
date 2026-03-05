@@ -1,0 +1,117 @@
+{
+	"name": "Oracle",
+	"cardSets": [
+		{
+			"name": "Astral Arcana",
+			"cards": [
+				{}
+			]
+		},
+		{
+			"name": "Major Arcana"
+		},
+		{
+			"name": "Minor Arcana",
+			"suits": [
+				{
+					"name": "Swords",
+					"cards": [
+						{
+							"name": "Ace",
+							"interpretations": {
+								"upright": {
+									"start": "This card signifies a fresh start in physical pursuits. It represents strong motivations, desire, and the power of the will to overcome challenges. This card encourages you to embrace new opportunities with confidence and courage.",
+									"middle": "As you navigate through your endeavors, the Ace of Swords reminds you to maintain brave and strong. It suggests that your endurance will be a key factor in achieving success. Trust yourself and be open to innovative solutions.",
+									"end": "In conclusion, the Ace of Swords heralds a time of intellectual growth and new beginnings. It encourages you to harness your mental capabilities to cut through confusion and achieve your goals. Embrace this energy to bring clarity and purpose to your life."
+								},
+								"reversed": {
+									"start": "The reversed Ace of Swords indicates a period of self distrust or a lacking will. You may be facing obstacles that hinder your ability to act clearly and make decisions. This card advises you to take a step back and reassess your situation.",
+									"middle": "During this time, it's important to avoid rushing into actions. The reversed Ace of Swords suggests that you may be struggling with self-doubt or misinformation. Seek advice from trusted sources and focus on regaining your strength.",
+									"end": "Ultimately, the reversed Ace of Swords serves as a reminder to be patient and cautious. Beware problems that may arise at the end of that process that may hinder you into achieving your objectives or the best of the results. Don't let arrogance or anxiety haste you, you will overcome these obstacles through perseverance and find your way forward."
+								}
+							}
+						},
+						{
+							"name": "II",
+							"interpretations": {
+								"upright": {
+									"start": "The Two of Swords represents a moment of indecision and balance. You may be facing a difficult choice that requires careful consideration. This card encourages you to weigh your options and seek harmony in your decisions.",
+									"middle": "As you navigate this period, the Two of Swords suggests that you take time to reflect on your values and priorities. It may be helpful to seek advice from trusted friends or mentors to gain clarity.",
+									"end": "In conclusion, the Two of Swords signifies the importance of finding balance and making thoughtful choices. Trust your intuition and strive for harmony in your decisions to move forward with confidence."
+								},
+								"reversed": {
+									"start": "The reversed Two of Swords indicates a state of confusion and indecision. You may be feeling overwhelmed by choices or unable to see a clear path forward. This card advises you to confront your fears and seek clarity.",
+									"middle": "During this time, it's important to avoid avoidance or denial. The reversed Two of Swords suggests that you may need to face difficult truths or make tough decisions. Seek support from others to help you navigate this uncertainty.",
+									"end": "Ultimately, the reversed Two of Swords serves as a reminder to embrace clarity and take decisive action. Don't let fear or confusion hold you back; trust yourself to find the right path forward."
+								}
+							}
+						},
+						{
+							"name": "III",
+							"interpretations": {
+								"upright": {
+									"start": "The Three of Swords signifies heartbreak and emotional pain. You may be experiencing a difficult situation that has caused you deep sorrow. This card encourages you to acknowledge your feelings and allow yourself to heal.",
+									"middle": "As you go through this period, the Three of Swords suggests that you take time for self-care and reflection. It may be helpful to seek support from loved ones or a counselor to help you process your emotions.",
+									"end": "In conclusion, the Three of Swords reminds you that healing is a journey. While the pain may feel overwhelming now, with time and support, you will find strength and resilience to move forward."
+								},
+								"reversed": {
+									"start": "The reversed Three of Swords indicates a period of recovery and healing from past wounds. You may be starting to let go of pain and find forgiveness. This card encourages you to embrace the healing process.",
+									"middle": "During this time, it's important to focus on self-compassion and growth. The reversed Three of Swords suggests that you may be learning valuable lessons from your experiences and finding new ways to cope.",
+									"end": "Ultimately, the reversed Three of Swords serves as a reminder that healing is possible. Embrace the journey of recovery and trust that you will emerge stronger and more resilient."
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "Plates",
+					"cards": [{}]
+				},
+				{
+					"name": "Butterflies",
+					"cards": [{}]
+				},
+				{
+					"name": "Shells",
+					"cards": [{}]
+				},
+				{
+					"name": "Pyres",
+					"cards": [{}]
+				},
+				{
+					"name": "Fruits",
+					"cards": [{}]
+				},
+				{
+					"name": "Feathers",
+					"cards": [{}]
+				},
+				{
+					"name": "Calyxes",
+					"cards": [{}]
+				},
+				{
+					"name": "Candles",
+					"cards": [{}]
+				},
+				{
+					"name": "Gems",
+					"cards": [{}]
+				},
+				{
+					"name": "Bells",
+					"cards": [{}]
+				},
+				{
+					"name": "Swords",
+					"cards": [{}]
+				},
+				{
+					"name": "Flowers",
+					"cards": [{}]
+				}
+			]
+		}
+	]
+}

@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 
-// CONSTANTS
 #define MAX_NODES 10
 #define COLOR_RED "\033[31m"
 #define COLOR_GREEN "\033[32m"
 #define COLOR_BLUE "\033[34m"
 #define COLOR_RESET "\033[0m"
 
-// GRAPH STRUCT
 typedef struct
 {
 	int adjMatrix[MAX_NODES][MAX_NODES];
@@ -36,7 +34,7 @@ void addEdge(Graph *g, int src, int dest)
 
 void printGraph(Graph *g)
 {
-	printf(COLOR_BLUE "Graph Adjacency Matrix:\n" COLOR_RESET);
+	printf(COLOR_BLUE "Matriz de Adjacência do Grafo:\n" COLOR_RESET);
 	printf("  ");
 	for (int i = 0; i < g->numNodes; i++)
 	{
@@ -46,21 +44,13 @@ void printGraph(Graph *g)
 
 	for (int i = 0; i < g->numNodes; i++)
 	{
-		// Print row header (node index)
 		printf(COLOR_GREEN "%d " COLOR_RESET, i);
 
-		// Print adjacency matrix with color for edges
 		for (int j = 0; j < g->numNodes; j++)
-		{
 			if (g->adjMatrix[i][j] == 1)
-			{
-				printf(COLOR_RED "1 " COLOR_RESET); // Edge
-			}
+				printf(COLOR_RED "1 " COLOR_RESET);
 			else
-			{
-				printf("0 "); // No edge
-			}
-		}
+				printf("0 ");
 		printf("\n");
 	}
 }
